@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RateHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>⭐ RateHub</h1>
+
+<h2>Rate a Place</h2>
+
+<input id="place" placeholder="Enter place name"><br><br>
+
+<label>Food:</label>
+<input type="number" id="food" min="1" max="5"><br>
+
+<label>Cleanliness:</label>
+<input type="number" id="clean" min="1" max="5"><br>
+
+<label>Water:</label>
+<input type="number" id="water" min="1" max="5"><br>
+
+<label>WiFi:</label>
+<input type="number" id="wifi" min="1" max="5"><br><br>
+
+<textarea id="review" placeholder="Write your review"></textarea><br><br>
+
+<button onclick="submitReview()">Submit Review</button>
+
+<hr>
+
+<h2>View Reviews</h2>
+
+<input id="searchPlace" placeholder="Enter place name"><br><br>
+<button onclick="getReviews()">Load Reviews</button>
+
+<div id="reviews"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
